@@ -1,0 +1,11 @@
+<div>
+  <h1>Info for <%= @task.title %></h1>
+  <p>
+    <%= @task.description %>
+  </p>
+  <p>
+    <%= @task.done %>
+  </p>
+</div>
+<%= link_to "Edit", edit_task_path(@task) %>
+<%= link_to "Back", tasks_path %>
